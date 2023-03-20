@@ -39,10 +39,28 @@ header {
     justify-content: space-around;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.burger.active {
+    z-index: 10;
+}
+.burger.active > span {
+     background-color: white;
 }
 .burger span {
     width: 100%;
     height: 4px;
     background-color: black;
     border-radius: 16px;
+}
+.burger.active > span:nth-child(1) {
+    transform: translateY(-30px);
+}
+.burger.active > span:nth-child(2) {
+    transform: rotate(45deg) translateY(11px);
+}
+.burger.active > span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
 }
