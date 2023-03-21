@@ -80,5 +80,24 @@ header {
         gap: 32px;
         font-weight: normal;
         display: flex;
+        transform: translateX(0%);
+    }
+    .menu-button {
+        position: relative;
+        cursor: pointer;
+    }
+    .menu-button::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        border-radius: 16px;
+        transition: all .3s ease-in-out;
+    }
+    .menu-button:hover::after {
+        width: 100%;
     }
 }
