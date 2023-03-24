@@ -108,10 +108,12 @@ header {
 .home-content span {
     font-size: 32px;
 }
-.home-icons i {
+.home-icons {
     background: red;
     width: max-content;
-    margin: 0 auto;
+    margin: 8px auto;
     display: flex;
-    gap: 10px;
+    padding-top: 6px;
+    gap: 3px;
+    border-radius: 8px;
 }
