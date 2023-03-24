@@ -101,3 +101,17 @@ header {
         width: 100%;
     }
 }
+.home {
+    font-size: 32px;
+    text-align: center;
+}
+.home-content span {
+    font-size: 32px;
+}
+.home-icons i {
+    background: red;
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
